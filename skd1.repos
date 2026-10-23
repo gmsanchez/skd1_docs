@@ -1,0 +1,26 @@
+# Usage (from <your_ws>/src):
+#   vcs import < /path/to/skd1_docs/skd1.repos
+repositories:
+  skd1:
+    type: git
+    url: https://github.com/gmsanchez/skd1.git
+    version: main
+  skd1_sensors:
+    type: git
+    url: https://github.com/gmsanchez/skd1_sensors.git
+    version: main
+  skd1_simulation:
+    type: git
+    url: https://github.com/gmsanchez/skd1_simulation.git
+    version: main
+  skd1_visualization:
+    type: git
+    url: https://github.com/gmsanchez/skd1_visualization.git
+    version: main
+  # Design files and BoM (not needed to build or run the robot):
+  # skd1_extra:
+  #   type: git
+  #   url: https://github.com/gmsanchez/skd1_extra.git
+  #   version: main
+  # hibachi_firmware is a PlatformIO project (STM32), not a ROS package, so it is
+  # not part of the colcon workspace. See docs/setup_guides/odom/setup_odom.md.
